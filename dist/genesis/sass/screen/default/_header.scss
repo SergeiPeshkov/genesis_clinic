@@ -1,0 +1,65 @@
+/*--- Header ---*/
+header {
+  width: $default-page-width;
+  height: 115px;
+  margin: 0 auto;
+  position: relative;
+
+  #logo {
+    display: block;
+    width: 246px;
+    height: 74px;
+    position: absolute;
+    left: 4px;
+    top: 13px;
+    background: sprite($sprite,logo) no-repeat;
+    text-indent: -9999px;
+  }
+  .slogan {
+    position: absolute;
+    left: 23px;
+    top: 83px;
+    font: bold 18px $OSb;
+  }
+
+  .head-right {
+    float: right;
+  }
+
+  // Main Navigation
+  nav {
+    margin: 0;
+    position: absolute;
+    right: 0;
+    bottom: 7px;
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0 2px 0 0;
+
+      li {
+        float: left;
+        font: normal 16px $OS;
+
+        + li {
+          &:before {
+            content: "|";
+            margin: 0 5px;
+          }
+        }
+
+        a {
+          color: $default-font-color;
+          @include u(false);
+        }
+      }
+    }
+  }
+}
+
+@import "blocks/b-contact-info";
+@import "blocks/b-socials";
+@import "blocks/b-search";
+
+/*--- End Header ---*/

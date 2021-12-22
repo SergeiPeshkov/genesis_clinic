@@ -1,0 +1,24 @@
+/*---Home---*/
+@import "blocks/b-home-top";
+@import "blocks/b-categories";
+
+.main-bottom {
+  .leftside {
+    float: left;
+    width: 232px;
+  }
+
+  .rightside {
+    float: right;
+    width: 232px;
+  }
+}
+.home-content {
+  margin: 0 252px;
+}
+
+@import "blocks/b-otziv";
+@import "blocks/b-video";
+@import "blocks/b-links";
+@import "blocks/b-news";
+/*---end Home---*/

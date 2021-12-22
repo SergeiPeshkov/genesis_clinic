@@ -1,0 +1,42 @@
+.pager {
+  margin: 20px 0;
+  padding: 5px 0 0;
+  // text-align: center;
+  border-top: 3px solid #DBDBDB;
+  
+  ul {
+    // display: inline;
+    overflow: hidden;
+    @include _ul;
+
+    li {
+      float: left;
+      padding: 0 5px;
+
+      // &:before {
+      //   display: none;
+      // }
+      
+      a {
+        font: normal 20px $OS;
+      }
+      // &.prev,
+      // &.next {
+      //   font-weight: bold;
+
+      //   a {
+      //     @include u(true);
+      //   }
+      // }
+      // &.prev {
+      //   margin-right: 27px !important;
+      // } 
+      // &.next {
+      //   margin-left: 27px !important;
+      // } 
+      // &.current {
+      //   font-weight: bold;
+      // }
+    }
+  }  
+}

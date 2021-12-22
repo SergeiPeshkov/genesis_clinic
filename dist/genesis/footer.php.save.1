@@ -1,0 +1,90 @@
+    <!-- footer -->
+    <footer>
+
+        <!-- .inner -->
+        <div class="inner">
+            
+            <!-- .col -->
+             <div class="col">
+                <h2>Доктора</h2>
+                <?php wp_nav_menu(array("theme_location" => "footerdocs", "container_class" => "menu")); ?>
+             </div>
+            <!-- /.col -->
+
+            <!-- .col -->
+            <div class="col">
+                <h2>О клинике</h2>
+                <?php wp_nav_menu(array("theme_location" => "footerabout", "container_class" => "menu")); ?>
+            </div>
+            <!-- /.col -->
+
+            <!-- .col -->
+            <div class="col">
+                <h2>Услуги</h2>
+                <?php wp_nav_menu(array("theme_location" => "footerservices", "container_class" => "menu")); ?>
+            </div>
+            <!-- /.col -->
+
+            <!-- .col -->
+            <div class="col">
+                <h2>Мы в сети</h2>
+
+                <!-- .b-social-btns -->
+                <div class="b-social-btns">
+                    <ul>
+                        <li class="social-btn">
+                            <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fgenesis.ua&amp;send=false&amp;layout=button_count&amp;width=245&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font=arial&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:245px; height:21px;" allowTransparency="true"></iframe>
+                        </li>    
+                        <li class="social-btn">
+                            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://genesis.ua">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                        </li>    
+                        <li class="social-btn">
+                            <!-- Place this tag where you want the +1 button to render. -->
+                            <div class="g-plusone" data-href="http://genesis.ua"></div>
+
+                            <!-- Place this tag after the last +1 button tag. -->
+                            <script type="text/javascript">
+                              (function() {
+                                var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                                po.src = 'https://apis.google.com/js/plusone.js';
+                                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                              })();
+                            </script>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.b-social-btns -->
+
+                <!-- .b-subscribe -->
+                <div class="b-subscribe">
+                    <form action="<?=site_url().'/subscribe/'?>" method="POST">
+                        <div class="form-item">
+                            <label>Подписаться на новости</label>
+                            <input type="email" class="form-text" name="email" placeholder="Укажите свой e-mail">
+                            <button type="submit">ок</button>
+                        </div>
+                    </form>
+                </div>
+                <!-- /.b-subscribe -->
+
+            </div>
+            <!-- /.col -->
+
+        </div>
+        <!-- /.inner -->
+
+    </footer>
+    <!-- /footer -->
+
+<?php wp_footer(); ?>
+<p align="center"><font size="1" color="8B8386"> Клиника "Генезис" не является клиническим учреждением здравоохранения (не имеет кафедры и не ведет учебную деятельность)<br>
+ согласно приказу МЗ Украины №174 от 05.06.1997 г.</font></p>
+
+<!-- RedHelper -->
+<script id="chatHelpScr" type="text/javascript" src="http://chathelp.ru/js/main.js?site=5423ff4690c58da74f00000f"></script>
+<script src="/callme/js/callme.js" charset="utf-8"></script>
+
+--/Redhelper -->
+</body>
+</html>

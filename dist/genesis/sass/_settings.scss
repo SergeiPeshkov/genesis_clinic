@@ -1,0 +1,42 @@
+$use-mozilla-ellipsis-binding: false;
+$legacy-support-for-ie6: false;
+
+$default-page-width: 960px;
+
+$default-body-bg: #fff;
+
+//Link
+$default-link-color: #3B5998;
+$default-link-underline: true;
+
+//Font
+$default-font-family: Arial, FreeSans, sans-serif;
+$default-font-size: 13px;
+$default-font-color: #000;
+
+$OS: open_sans_semibold, $default-font-family;
+$OSb: open_sans, $default-font-family;
+
+$default-inputs-font-family: $default-font-family;
+
+//CSS3Pie
+// $pie-behavior: url("js/PIE.htc");
+
+//Sprite options
+//$sprite-layout:smart; //vertical horizontal diagonal smart
+//$ico-sprite-dimensions: true;
+// $sprite-spacing: 5px;
+// $sprite-repeat: no-repeat;
+// $sprite-sprite-dimensions: true;
+//$sprite-sprite-base-class: ".sprite-icon";
+//$sprite-icon6-spacing: 35px;
+//@import "sprite/*.png";
+//$sprite: $sprite-sprites;
+$sprite: sprite-map("sprite/*.png",
+  $position: 0%, $spacing: 10px, $repeat: no-repeat,
+  // $sprite-bg-nav-repeat: repeat-x,
+  // $sprite-calendar-position: 100%,
+  $sprite-calendar-spacing: 30px,
+  $sprite-calendar-prev-spacing: 30px,
+  $sprite-calendar-next-spacing: 30px
+);

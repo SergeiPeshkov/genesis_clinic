@@ -1,0 +1,23 @@
+.player {
+  display: block;
+  width: 232px;
+  margin: 0 -5px;
+  padding: 3px;
+  position: relative;
+
+  > * {
+    display: block;
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: -32px 0 0 -32px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: sprite($sprite,video-play) no-repeat;
+  }
+}

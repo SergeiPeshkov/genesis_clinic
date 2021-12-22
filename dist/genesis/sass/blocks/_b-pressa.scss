@@ -1,0 +1,20 @@
+.b-pressa {
+  article + article {
+    margin-top: 40px;
+  }
+
+  h2 {
+    margin: 0;
+    font: normal 18px/22px $OS;
+
+    + p {
+      margin-top: 15px;
+    }
+  }
+  
+  .istochnik {
+    margin-top: -7px;
+    color: #666;
+    font: normal 15px $OS;
+  }
+}

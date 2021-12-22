@@ -1,0 +1,23 @@
+.b-diagnostic {
+  .leftside {
+    width: 310px;
+    float: left;
+
+    .img {
+      margin-bottom: 10px;
+    }
+
+    .b-video {
+      .player {
+        width: 310px;
+      }
+    } 
+  }
+  .content {
+    margin: 0 0 0 330px;
+
+    > p:first-child {
+      margin-top: 0;
+    }
+  }
+}

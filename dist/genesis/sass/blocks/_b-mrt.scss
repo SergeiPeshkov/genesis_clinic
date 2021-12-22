@@ -1,0 +1,29 @@
+.b-mrt {
+  overflow: hidden;
+
+  .img {
+    overflow: hidden;
+    float: left;
+    width: 310px;
+  }
+  .info {
+    margin: 0 0 0 320px;
+
+    dl {
+      overflow: hidden;
+      margin: 0;
+      padding: 10px 0 0;
+      font: normal 16px $OS;
+
+      dt {
+        clear: both;
+        float: left;
+        margin: 0 0 22px;
+      }
+      dd {
+        float: left;
+        margin: 0 0 22px 5px;
+      }
+    }
+  }
+}

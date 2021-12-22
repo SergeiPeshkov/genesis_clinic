@@ -1,0 +1,33 @@
+@import "import";
+
+@import "reset";
+@import "fonts";
+
+@import "screen/default/common";
+@import "screen/default/layout";
+@import "screen/default/header";
+@import "screen/default/footer";
+@import "blocks/default/forms";
+@import "blocks/default/paginator";
+@import "blocks/plugins/scrollable";
+@import "blocks/plugins/datepicker";
+
+@import "screen/home";
+@import "screen/about";
+@import "screen/answers_list";
+@import "screen/blog";
+@import "screen/diagnostic";
+@import "screen/history";
+@import "screen/reviews";
+@import "screen/pressa";
+@import "screen/mrt";
+@import "screen/photos_and_videos";
+@import "screen/doctor";
+@import "screen/price";
+
+// @media screen and (min-width: 768px) and (max-width: 960px) {
+  
+// }
+// @media screen and (max-width: 768px) {
+  
+// }

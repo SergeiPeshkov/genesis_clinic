@@ -1,0 +1,32 @@
+.b-news {
+  h2 {
+    margin-bottom: 2px;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      padding: 8px 0;
+
+      h3 {
+        margin: 0 0 5px;
+
+        a {
+          font-size: 14px;
+          font-weight: bold;
+        }
+      }
+      p {
+        margin: 0;
+        line-height: 17px;
+      }
+    }
+  }
+
+  .more {
+    margin: 0;
+  }
+}

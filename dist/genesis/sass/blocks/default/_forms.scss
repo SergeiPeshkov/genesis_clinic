@@ -1,0 +1,108 @@
+
+.form-text {
+  vertical-align: top;
+  width: 192px;
+  height: 25px;
+  padding: 6px;
+  border: 1px solid #D9D9D9;
+  background: #f5f5f5;
+  @include border-radius(3px);
+  @include placeholder-color(#333);
+
+  + input,
+  + button {
+    &[type=submit] {
+      vertical-align: top;
+      width: 35px;
+      height: 23px;
+      margin: 1px 0 0 -35px;
+      padding: 0;
+      border: {
+        style: solid;
+        width: 0 0 0 1px;
+        color: #d9d9d9;
+      };
+      color: #333;
+      background: transparent;
+      cursor: pointer;
+      outline: 0px;
+    }
+  }
+}
+textarea {
+  resize: vertical;
+  display: block;
+  width: 529px;
+  border: 1px solid #D9D9D9;
+  background: #fff;
+  @include border-radius(3px);
+  @include placeholder-color(#333);
+
+  + label {
+    display: inline-block;
+    padding-top: 5px;
+  }
+}
+label {
+  input[type=checkbox] {
+    margin-right: 5px;
+  }
+}
+input[type=submit],
+button[type=submit] {
+  height: 38px;
+  margin: 5px 0 0;
+  padding: 0 19px;
+  border: 0;
+  color: #fff;
+  background: #E9570C;
+  font: normal 20px $OS;
+  cursor: pointer;
+  @include border-radius(4px);
+}
+
+.form-item {
+  clear: both;
+  overflow: hidden;
+  margin: 0 0 5px;
+
+  > label {
+    float: left;
+    width: 65px;
+    font-weight: bold;
+    padding: 3px 0 0;
+
+    + .controls {
+      margin-left: 67px;
+
+      .form-text {
+        width: 221px;
+        background: #fff;
+      }
+    }
+  } 
+}
+
+.messages {
+  margin: 10px 0;
+  padding: 7px 10px;
+  border: 1px solid #D9D9D9;
+  background: #F7F7F7;
+  font-size: 14px;
+  @include border-radius(4px);
+
+  ul {
+    @include _ul;
+
+    li {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  &.error {
+    border-color: #CA0101;
+    color: #D60000;
+    background: #F7F1F1;
+  }
+}

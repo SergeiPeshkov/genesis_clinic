@@ -1,0 +1,27 @@
+.b-form {
+  padding: 10px 5px 10px 12px;
+  background: #F2F2F2;
+  @include border-radius(5px);
+  color: #333;
+
+  h2 {
+    vertical-align: middle;
+    display: inline-block;
+    margin: 0 0 10px;
+    font: normal 20px $OS;
+  }
+  .description {
+    vertical-align: middle;
+    display: inline-block;
+    margin: 0 0 7px 17px;
+  }
+  .col {
+    float: left;
+    width: 295px;
+    padding: 0 0 10px;
+
+    + .col {
+      margin-left: 12px;
+    }
+  }
+}

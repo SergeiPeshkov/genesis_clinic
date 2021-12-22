@@ -1,0 +1,98 @@
+.datepicker {
+  border: 1px solid #D7D7D7;
+  @include border-radius(3px);
+  @include box-shadow(#d7d7d7 0 1px 5px);
+
+  .ui-datepicker-calendar {
+    width: 100%;
+    border-collapse: collapse;
+
+    thead {
+      th {
+        color: #ABABAB;
+        font: normal 11px $OS;
+        padding: 9px 0;
+        text-align: center;
+      }
+    }
+    tbody {
+      td {
+        vertical-align: middle;
+        padding: 0;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+
+        border: {
+          style: solid;
+          width: 1px 0 0 1px;
+          color: #E6E6E6;
+        };
+
+        > * {
+          line-height: 30px;
+        }
+
+        &:first-child {
+          border-left-width: 0;
+        }
+
+        a {
+          display: inline-block;
+          width: 30px;
+          color: #2B2B2B;
+          font: normal 16px/30px $OS;
+          @include u(false,true);
+
+          &.ui-state-active,
+          &:hover {
+            background: #E5530C;
+            color: #fff;
+            @include text-shadow(rgba(#000,.45) 0 -1px 0);
+          }
+          &.ui-state-disabled {
+            background: #EDEDED;
+            color: #999;
+          }
+        }
+      }
+    }
+  }
+
+  .ui-datepicker-header {
+    height: 35px;
+    background: #D1D1D1;
+    @include background(linear-gradient(#DCDCDC,#C6C6C6));
+  }
+
+  %pn {
+    display: block;
+    width: 24px;
+    height: 35px;
+    border: {
+      style: solid;
+      width: 0;
+      color: #C1C1C1;
+    };
+    text-indent: -9999px;
+    cursor: pointer;
+  }
+
+  .ui-datepicker-prev {
+    @extend %pn;
+    float: left;
+    border-right-width: 1px;
+    background: sprite($sprite,calendar-prev,8px,11px) no-repeat;
+  }
+  .ui-datepicker-next {
+    @extend %pn;
+    float: right;
+    border-left-width: 1px;
+    background: sprite($sprite,calendar-next,8px,11px) no-repeat;
+  }
+
+  .ui-datepicker-title {
+    margin: 0 25px;
+    font: normal 18px/35px $OS;
+  }
+}

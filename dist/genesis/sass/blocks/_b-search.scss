@@ -1,0 +1,14 @@
+.b-search {
+  float: right;
+
+  .form-text {
+    padding-right: 6px + 33;
+
+    + input,
+    + button {
+      &[type=submit] {
+        background: sprite($sprite,search,6px,3px) no-repeat;
+      }
+    } 
+  }
+}

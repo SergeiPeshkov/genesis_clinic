@@ -1,0 +1,48 @@
+.b-information {
+
+  h2 {
+    margin-top: 0;
+  }
+
+  .address {
+    margin-bottom: 30px;
+    line-height: 25px;
+    
+    address {
+      display: inline;
+      font-style: normal;
+      font-weight: bold;
+    }
+    a {
+      font-weight: bold;
+    }
+  }
+
+  .place {
+    margin-bottom: 30px;
+    padding: 0;
+
+    p {
+      font-size: 13px;
+      line-height: 16px;
+    }
+  }
+
+  .schedule {
+    dl {
+      overflow: hidden;
+
+      dt {
+        clear: both;
+        float: left;
+        width: 170px;
+        font-weight: bold;
+        line-height: 20px;
+      }
+      dd {
+        margin: 0 0 0 180px;
+        line-height: 20px;
+      }
+    }
+  }
+}
