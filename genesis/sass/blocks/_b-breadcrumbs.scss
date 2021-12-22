@@ -1,0 +1,25 @@
+.b-breadcrumbs {
+  ul {
+    overflow: hidden;
+    @include _ul(7px 12px 5px);
+
+    li {
+      float: left;
+      position: relative;
+
+      + li {
+        padding: 0 0 0 5px;
+
+        &:before {
+          content: "»";
+          margin: 0 8px 0 0;
+        }
+      }
+
+      a {
+        color: #000;
+        @include u(false);
+      }
+    }
+  }
+}

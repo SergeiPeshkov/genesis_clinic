@@ -1,0 +1,31 @@
+// @import font-url(http://fonts.googleapis.com/css?family=Open+Sans:600italic,600,700&subset=latin,cyrillic);
+@font-face {
+  font-family: 'open_sans';
+  src: font-url('opensans-boldwebfont.eot');
+  src: font-url('opensans-boldwebfont.eot?#iefix') format('embedded-opentype'),
+       font-url('opensans-boldwebfont.woff') format('woff'),
+       font-url('opensans-boldwebfont.ttf') format('truetype'),
+       font-url('opensans-boldwebfont.svg#open_sansbold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'open_sans_semibold';
+  src: font-url('opensans-semiboldwebfont.eot');
+  src: font-url('opensans-semiboldwebfont.eot?#iefix') format('embedded-opentype'),
+       font-url('opensans-semiboldwebfont.woff') format('woff'),
+       font-url('opensans-semiboldwebfont.ttf') format('truetype'),
+       font-url('opensans-semiboldwebfont.svg#open_sans_semiboldregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'open_sans_semibold';
+  src: font-url('opensans-semibolditalicwebfont.eot');
+  src: font-url('opensans-semibolditalicwebfont.eot?#iefix') format('embedded-opentype'),
+       font-url('opensans-semibolditalicwebfont.woff') format('woff'),
+       font-url('opensans-semibolditalicwebfont.ttf') format('truetype'),
+       font-url('opensans-semibolditalicwebfont.svg#open_sans_semibolditalic') format('svg');
+  font-weight: normal;
+  font-style: italic;
+}

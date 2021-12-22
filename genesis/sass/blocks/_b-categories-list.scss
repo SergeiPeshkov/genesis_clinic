@@ -1,0 +1,10 @@
+.b-categories-list {
+  ul {
+    @include _ul;
+
+    li {
+      padding: 1px 0;
+      font-weight: bold;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.b-statii {
+  ul {
+    @include _ul;
+
+    li {
+
+      + li {
+        margin: 20px 0 0;
+      }
+
+      a {
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: bold;
+      }
+      p {
+        font-size: 13px;
+        line-height: 16px;
+        margin: 5px 0;
+      }
+    }
+  }
+}

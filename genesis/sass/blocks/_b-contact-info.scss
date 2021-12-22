@@ -1,0 +1,17 @@
+.b-contact-info {
+  padding: 10px 0 8px;
+  color: #E9570C;
+  font: normal 26px $OS;
+  white-space: nowrap;
+  @include inline-blocks;
+
+  address {
+    font-style: normal;
+    margin: 0 22px 0 0;
+    @include inline-block;
+  }
+  .phone {
+    margin: 0 10px 0 0;
+    @include inline-block;
+  }
+}

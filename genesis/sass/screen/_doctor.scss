@@ -1,0 +1,17 @@
+/*---Doctor---*/
+.doctor-page {
+  h1 {
+    margin-left: 330px !important;
+  }
+  #content > p {
+    font-size: 13px;
+    line-height: 16px;
+  }
+}
+
+@import "blocks/b-doctor-img";
+@import "blocks/b-doctor-info";
+@import "blocks/b-statii";
+@import "blocks/b-sort";
+@import "blocks/b-doctors";
+/*---end Doctor---*/

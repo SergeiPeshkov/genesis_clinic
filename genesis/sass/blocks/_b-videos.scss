@@ -1,0 +1,32 @@
+.b-videos {
+
+  .frames {
+    padding-left: 10px;
+  }
+
+  .video {
+    width: 222px;
+    margin-right: 17px;
+    border: 0;
+    background: none;
+    @include box-shadow(none);
+
+    > a {
+
+    }
+    .img {
+      width: 222px;
+      height: 152px;
+      margin: 0;
+      padding: 5px;
+
+      img {
+        max-width: 210px;
+        max-height: 140px;
+      }
+    }
+    .name {
+      text-align: left;
+    }
+  }
+}

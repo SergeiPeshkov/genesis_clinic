@@ -1,0 +1,33 @@
+.btn {
+  display: inline-block;
+  padding: 0 15px;
+  color: #000;
+  font: normal 16px/33px $OS;
+  background: #E7E7E7;
+  text-decoration: none;
+  @include background(linear-gradient(#F3F3F3,#DADADA));
+  @include border-radius(13px);
+  @include box-shadow(#8C8C8C 1px 1px 3px);
+
+  &:hover {
+    @include background(linear-gradient(#DADADA,#F3F3F3));
+  }
+
+  // Orange
+  &.btn-orange {
+    color: #fff;
+    background: #DE5B17;
+    @include text-shadow(#752C06 1px 1px 1px);
+    @include background(linear-gradient(#EB6825,#D24F0B));
+
+    &:hover {
+      @include background(linear-gradient(#D24F0B,#EB6825));
+    }
+  }
+  &.btn-right {
+    float: right;
+  }
+  &.btn-left {
+    float: left;
+  } 
+}

@@ -1,0 +1,37 @@
+.b-comments {
+  padding: 15px 0 0;
+  border: 0;
+  border-top: 3px solid #DBDBDB;
+
+  $c: ".comment";
+  #{$c} {
+    padding: 12px 10px 12px 0;
+    overflow: hidden;
+
+    #{$c}-user-img {
+      float: left;
+      width: 60px;
+    }
+    #{$c}-text {
+      margin: 0 0 0 80px;
+
+      p {
+        margin-bottom: 0;
+      }
+
+      #{$c}-panel {
+        color: #191919;
+        font-size: 13px;
+
+        .name {
+          font-weight: bold;
+          margin-right: 5px;
+        }
+
+        + p {
+          margin-top: 3px;
+        }
+      }
+    }
+  }
+}

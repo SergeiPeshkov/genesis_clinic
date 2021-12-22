@@ -1,0 +1,88 @@
+.b-home-top {
+  overflow: hidden;
+  background: #F8F8F8;
+
+  .scrollable {
+    float: left;
+    width: 638px + 320;
+    height: 389px;
+
+    .items {
+      > div {
+        width: 638px + 320;
+        height: 389px;
+        position: relative;
+
+        > a:first-child {
+          display: block;
+          width: 638px + 320;
+          height: 389px;
+        }
+
+        .img {
+          overflow: hidden;
+          float: left;
+          display: block;
+          width: 638px;
+          height: 389px;
+        }
+      }
+    }
+
+    .navi {
+      right: 120px + 320;
+      bottom: 10px;
+
+      a {
+        float: left;
+        display: block;
+        width: 15px;
+        height: 16px;
+        margin: 0 0 0 5px;
+        background: sprite($sprite,navi) no-repeat;
+        cursor: pointer;
+
+        &.active {
+          background: sprite($sprite,navi-active) no-repeat;
+        }
+      }
+    }
+  }
+
+  .content {
+    float: left;
+    display: block;
+    width: 320px;
+    padding: 0 0 0 15px;
+
+    .title {
+      display: block;
+      margin: 10px 0 5px;
+      color: #E9570C;
+      font: normal 28px/33px $OS;
+    }
+    .text {
+      display: block;
+      padding: 0 0 0 6px;
+      color: $default-font-color;
+      font: normal 14px/17px $OS;
+    }
+  }
+
+  a.add-zapis {
+    display: inline-block;
+    width: 268px;
+    min-height: 87px;
+    padding: 5px 0 0 106px;
+    position: absolute;
+    left: 662px;
+    bottom: 11px;
+    color: #fff;
+    background: #E75910 sprite($sprite,calendar,21px,15px) no-repeat;
+    font: normal 32px/38px $OS;
+    @include u(false,true);
+    @include border-radius(3px);
+    @include text-shadow(#9C2304 1px 1px 1px);
+    @include box-shadow(inset #EF824A 0 2px 1px, #6D6D6D 1px 1px 1px);
+  }
+}

@@ -1,0 +1,21 @@
+.b-socials {
+  float: right;
+  padding: 1px 7px 0 0;
+
+  a {
+    display: inline-block;
+    width: 23px;
+    height: 22px;
+    margin: 0 7px 0 0;
+
+    &.facebook {
+      background: sprite($sprite,icon-facebook);
+    }
+    &.twitter {
+      background: sprite($sprite,icon-twitter);
+    }
+    &.rss {
+      background: sprite($sprite,vk);
+    }
+  }
+}

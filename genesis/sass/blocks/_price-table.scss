@@ -1,0 +1,36 @@
+.price-table {
+  width: 100%;
+  border-collapse: collapse;
+
+  %table-el {
+    border-bottom: 1px solid #D9D9D9;
+    text-align: right;
+
+    &:first-child {
+      text-align: left;
+    }
+  }
+
+  th {
+    @extend %table-el;
+    font-size: 13px;
+    font-weight: normal;
+    padding: 3px 0 3px 5px;
+
+    &:first-child {
+      padding-right: 5px;
+    }
+  }
+  td {
+    @extend %table-el;
+    padding: 15px 20px 10px 5px;
+    color: #333;
+    font: normal 16px $OS;
+
+    &:first-child {
+      padding-right: 5px;
+      color: $default-font-color;
+      font-size: 15px;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.b-photos {
+  .frames {
+    padding-left: 10px;
+  }
+  .frame {
+    width: 222px;
+    margin-right: 17px;
+
+    .img {
+      margin-top: 0;
+    }
+    .name {
+      text-align: left;
+    }
+  }
+  + h1 {
+    margin-top: 20px !important;
+  }
+}

@@ -1,0 +1,26 @@
+$scrollable: ".scrollable";
+
+#{$scrollable} {
+  position:relative;
+  overflow:hidden;
+}
+#{$scrollable} .items {
+  width:20000em;
+  position:absolute;
+  clear:both;
+  
+  > div {
+    overflow: hidden;
+    float:left;
+  }
+}
+// .prev, .next {
+//   display: block;
+//   position: absolute;
+//   // top: 50%;
+//   z-index: 10;
+//   cursor: pointer;
+// }
+.navi {
+  position: absolute;
+}

@@ -1,0 +1,6 @@
+.shadow {
+  margin: 0 0 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  @include box-shadow(#C7C7C7 0 0 4px);
+}

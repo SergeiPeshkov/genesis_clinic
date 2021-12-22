@@ -1,0 +1,18 @@
+.b-doctors {
+  .frames {
+    padding-left: 10px;
+  }
+  .frame {
+    width: 222px;
+    min-height: 315px;
+    margin-right: 21px;
+
+    > a {
+
+    }
+    .img {
+      margin-top: 0;
+      height: 200px;
+    }
+  }
+}

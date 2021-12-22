@@ -1,0 +1,134 @@
+.popup {
+  display: none;
+  width: 315px;
+  padding: 0;
+  // position: absolute;
+  // left: 35%;
+  // top: 20%;
+  background: #fff;
+
+  .slide {
+    display: none;
+  }
+  .slide1 {
+    display: block;
+    text-align: center;
+  }
+
+  h3 {
+    margin: 0 0 10px;
+    color: #E9570C;
+    font: normal 20px $OS;
+    text-align: center;
+  }
+  h4 {
+    margin: 25px 0 10px;
+    font: normal 18px $OS;
+    text-align: center;
+  }
+  p {
+    font: normal 16px $OS;
+  }
+
+  .datepicker {
+    width: 218px;
+    margin: 0 auto;
+  }
+
+  .btns {
+    overflow: hidden;
+    padding: 5px;
+  }
+
+  .table {
+    margin: 20px 0;
+    border: 1px solid #D9D9D9;
+    @include border-radius(5px);
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    td {
+      padding: 10px;
+      font-size: 16px;
+      border: {
+        style: solid;
+        width: 1px 0 0 0;
+        color: #D9D9D9;
+      };
+
+      a {
+        @include u(false);
+      }
+
+      // &:first-child {
+      //   border-left-width: 0;
+      // }
+    }
+
+    tr {
+      &:first-child {
+        td {
+          border-top: 0;
+        }
+      }
+    }
+  }
+  .period-table {
+    background: #F7F7F7;
+  }
+
+  .calendar {
+    overflow: hidden;
+    padding: 7px 0 0;
+    color: #3B5998;
+    font-size: 14px;
+    font-weight: bold;
+
+    .date {
+      float: left;
+      padding-left: 22px;
+      background: sprite($sprite,date) no-repeat;
+    }
+    .time {
+      float: right;
+      padding-left: 21px;
+      background: sprite($sprite,time) no-repeat;
+    }
+  }
+
+  .zapros-form {
+    .form-field {
+      margin: 0 0 10px;
+
+      label {
+        vertical-align: top;
+        display: inline-block;
+        width: 115px;
+        padding: 5px 10px 0;
+        font-size: 16px;
+      }
+      .form-textarea,
+      .form-text {
+        vertical-align: top;
+        display: inline-block;
+        width: 196px;
+        height: 30px;
+        background: #fff;
+        border: 1px solid #ccc;
+        font-size: 16px;
+        @include border-radius(3px);
+
+        &.error {
+          border-color: #CA0101;
+        }
+      }
+      .form-textarea {
+        height: 70px;
+        resize: none;
+      }
+    }
+  }
+}
