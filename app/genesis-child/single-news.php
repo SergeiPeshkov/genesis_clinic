@@ -8,6 +8,7 @@
                         <div class="entry">
                             <div class="entry-title">
                                 <h1><?php the_title(); ?></h1>
+                          
                             </div>
                             <ul class="p-0 entry-meta clearfix">
                                 <li><i class="icon-calendar3"></i> <?php the_date('d F Y'); ?></li>

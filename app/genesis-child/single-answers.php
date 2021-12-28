@@ -10,13 +10,16 @@
         $answer = get_post_meta($post->ID, 'answer', 1);
         $doctor = get_post_meta($post->ID, 'doctor', 1);
         $user_info = get_userdata($doctor);
-        $doctor = $user_info->user_level == 10 ? $post->post_author : $doctor;
+
+       // $doctor = $user_info->user_level == 10 ? $post->post_author : $doctor;
+        $doctor = $post->post_author;
         $doctor = get_posts(array(
             "post_type" => 'doctor',
             "showposts" => '1',
             "meta_key" => "acco",
             "meta_value" => $doctor
         ));
+    
         if ($doctor[0]->ID) {
             $rang = get_post_meta($doctor[0]->ID, 'rang', 1);
             $avatar = get_the_post_thumbnail_url($doctor[0]->ID, 'thumbnail');

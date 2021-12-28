@@ -19,7 +19,9 @@ foreach ($sliders as $slider) {
 	$slider_img_url = get_the_post_thumbnail_url($slider);	
 	$slider_content = $slider->post_content;
 	$slider_title = $slider->post_title;	
-	$slider_link = get_field('link', $slider);  	
+	$slider_link = get_field('link', $slider);     
+    $slider_button_text = get_field('button_text', $slider); 
+   
 ?>
         <div class="back-image">
             <div class="container" style="padding:1em 10px;">
@@ -33,7 +35,8 @@ foreach ($sliders as $slider) {
                         </div>
                         <br>
 						<a href="<?php echo $slider_link; ?>">
-							<button type="button" class="slider-button btn btn-warning">Перейти</button>
+							<button type="button" class="slider-button btn btn-warning"><?php echo $slider_button_text;?></button>
+                           
 						</a>
                     </div>
                     <!--столбец 2-->
@@ -239,7 +242,7 @@ foreach ($sliders as $slider) {
 					    <?php
 							$news_list = get_posts( array(
 								'post_type'   => 'news',
-								'showposts' => 10,
+								'showposts' => 7,
 								'orderby'     => 'date',
 								'order'       => 'DESC',								
 								));
@@ -253,7 +256,8 @@ foreach ($sliders as $slider) {
 						
 									<?php foreach ($news_list as $news_item) {
 											$news_img_md = get_the_post_thumbnail_url($news_item, 'medium');
-											$news_img_lg = get_the_post_thumbnail_url($news_item, 'full');			
+											$news_img_lg = get_the_post_thumbnail_url($news_item, 'large');	
+                                            $news_img_full = get_the_post_thumbnail_url($news_item, 'full');				
 											$news_title = get_the_title($news_item); 
 											$news_link = get_permalink($news_item);  
 											$news_date = get_the_date('j F, Y', $news_item); 
@@ -266,9 +270,9 @@ foreach ($sliders as $slider) {
 														<div class="portfolio-image">
 															<a href="<?php echo $news_link;  ?>" class="d-inline-block">
 																<img width="1200" class="wp-post-image frontpage-img-news" loading="lazy"
-																src="<?php echo $news_img_md; ?>" 
-																srcset="<? echo $news_img_md; ?> 1x, 
-																<? echo $news_img_lg; ?> 2x	">
+																src="<?php echo $news_img_lg; ?>" 
+																srcset="<? echo $news_img_lg; ?> 1x,                                                                
+																<? echo $news_img_full; ?> 2x">
 															</a>	
 														</div>	
 														<div class="pb-1 pt-1">
