@@ -173,8 +173,10 @@ include_once 'parts/service-search-block.php';
 				  ?>
                  <?php if ($the_query_service->posts){ ?>	
 				  <div class="divider"><i class="icon-circle"></i></div>				 
-				  	<div class="container clearfix">					
-						<!--<input class="js-search-block form-control form-control-lg p-4 mb-4" type="text" placeholder="Поиск услуги" />
+				  	<div class="container clearfix">	
+						
+					  
+						<input class="js-search-block form-control form-control-lg p-4 mb-4" type="text" placeholder="Поиск услуги" />
 						  <div class="row container legend-row">
 							<div class="legend-row__block">
 								<div class="legend-row__first-visit-icon">
@@ -191,7 +193,8 @@ include_once 'parts/service-search-block.php';
 									<p> - Повторный прием</p>
 								</div>
 							</div>
-						</div>-->
+						</div>
+						
 						
 						  <div class="togglec block-head__shortname">						
 						  <?php 

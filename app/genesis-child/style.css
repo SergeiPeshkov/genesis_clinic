@@ -1405,7 +1405,7 @@ body:not(.device-md):not(.device-sm):not(.device-xs) #primary-menu.style-2.cente
     float: right;
 }
 @media (min-width:992px) {
-    .overlay-menu:not(.top-search-open) #primary-menu-trigger {
+    .overlay-menu: not(.top-search-open) #primary-menu-trigger {
     opacity: 1;
     pointer-events: auto;
     left: auto;
@@ -5900,8 +5900,9 @@ body:not(.device-touch) .button.button-full strong {
 .button.button-border.button-fill {
     overflow: hidden;
     transform-style: preserve-3d;
-    -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
-    -webkit-backface-visibility:hidden;
+    -webkit-mask-image: url(data:image/png;
+    base64, iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
+    -webkit-backface-visibility: hidden;
 }
 .button.button-border.button-fill span {
     position: relative;

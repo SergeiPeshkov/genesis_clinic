@@ -747,25 +747,26 @@ function create_acat_taxonomies()
                 <tr>
                     <td>Цена (первичный прием)</td>
                     <td>
-                        <input type="text" value="<?=$price?>" name="wprec[price]">
+                        <input type="text" value="<?=$price?>" name="wprec[price]"  width="30px">
                     </td>
                 </tr>
 				<tr>
                     <td>Цена (повторный прием)</td>
                     <td>
-                        <input type="text" value="<?=$price_repeat?>" name="wprec[price_repeat]">
+                        <input type="text" value="<?=$price_repeat?>" name="wprec[price_repeat]" width="30px">
                     </td>
                 </tr>
+            
                 <tr>
                     <td>Кабинет</td>
                     <td>
-                        <input type="text" value="<?=$room?>" name="wprec[room]">
+                        <input type="text" value="<?=$room?>" name="wprec[room]" width="30px">
                     </td>
                 </tr>
                 <tr>
                     <td>Телефон</td>
                     <td>
-                        <input type="text" value="<?=$phone?>" name="wprec[phone]">
+                        <input type="text" value="<?=$phone?>" name="wprec[phone]" width="30px">
                     </td>
                 </tr>
             </tbody>

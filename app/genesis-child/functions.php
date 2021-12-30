@@ -266,8 +266,8 @@ function email_client($post_ID, $post, $update)
 add_action('save_post', 'email_client', 10, 3);
 
 // ОТКЛЮЧЕНИЕ АВТОМАТИЧЕСКОГО ФОРМАТРИРОВАНИЯ СТАТЕЙ
-remove_filter('the_content', 'wpautop');
-remove_filter('the_excerpt', 'wpautop');
+// remove_filter('the_content', 'wpautop');
+// remove_filter('the_excerpt', 'wpautop');
 
 // Функция для удаления дубликатов из массива (сравнение коллбэком)
 function array_uunique(array $array, callable $comparator): array

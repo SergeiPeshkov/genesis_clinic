@@ -1,12 +1,15 @@
 <?php get_header(); 
 if (have_posts()) : while (have_posts()) : the_post();
 $price = get_post_meta(get_the_ID(), 'price', 1);
+$price_repeat = get_post_meta(get_the_ID(), 'price_repeat', 1);
 set_query_var('title', get_the_title() );
 if ($price)
-		{if(!stristr($price, '₽')){
+		{
+			if(!stristr($price, '₽')){
 				$price= $price .' &#8381;'; /*добавляем значек рубля, если цена больше нуля и значек рубля не в вставляли в админку*/				
-		}
+		}		
 	}
+if ($price_repeat) { $price = 'Первичный приём: <strong>' . $price . '</strong><br>Повторный: <strong>'. $price_repeat. ' &#8381; </strong>'; }
 
 /*set_query_var('subtitle',  $price?$price.'&#8381;':''  );*/
 
@@ -139,8 +142,8 @@ span.wpcf7-not-valid-tip {
 						include_once 'parts/oftalmolog_queue.php';
 					}
 				  ?>
-                <h2 class="mt-4">Цены и места предоставления услуги  <span style="color: #888484;"> &#171;<?php echo get_the_title() ?>&#187;</span></h2>
-				                
+                <h2 class="mt-4" style="clear: both; ">Цены и места предоставления услуги  <span style="color: #888484;"> &#171;<?php echo get_the_title() ?>&#187;</span></h2>
+				<p>* Цена в скобках указана за повторный приём врача. </p>             
                 <!--  <div class="accordion accordion-bg clearfix accordion-usluga" <?=$accordion_state?>>-->
 				<?php  foreach ($the_query->posts as $clinic){  
 								$clinic_select =  '';								
@@ -197,9 +200,14 @@ span.wpcf7-not-valid-tip {
 								
 								<div class="service_price_klinic"> <!--цена услуги клиники-->
 									 <?php 
-									 foreach ($services_unique as $v) {
-										echo format_price($v['цена_новая']);
-										}   
+									 foreach ($services_unique as $v) {	
+										 if($v['повторный_прием']){
+											echo format_price($v['цена_новая']) . ' (<span style="color: #8a8a8a">' . format_price($v['повторный_прием']) . '</span>)' ;	
+										 }else{
+											echo format_price($v['цена_новая']);
+										 }								 
+																																			
+										}
 									?>
 								</div>	
 							 </div>																
