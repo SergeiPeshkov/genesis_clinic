@@ -756,7 +756,6 @@ function create_acat_taxonomies()
                         <input type="text" value="<?=$price_repeat?>" name="wprec[price_repeat]" width="30px">
                     </td>
                 </tr>
-            
                 <tr>
                     <td>Кабинет</td>
                     <td>
