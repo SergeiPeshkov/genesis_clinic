@@ -54,6 +54,7 @@ function load_style_script()
 {
 
 	wp_enqueue_script('plugins.js', get_stylesheet_directory_uri() . '/js/plugins.js', array(), '', true);
+	wp_enqueue_script('owl.carousel.js', get_stylesheet_directory_uri() . '/js/plugins/owl.carousel.js', array(), '', true);
 	wp_enqueue_script('datepicker.js', get_stylesheet_directory_uri() . '/js/components/datepicker.js', array(), '', true);		
 	wp_enqueue_script('functions.js', get_stylesheet_directory_uri() . '/js/functions.js?v=6', array(), '', true);	
 	wp_enqueue_script('create-map.js', get_stylesheet_directory_uri() . '/js/create-map.js?v=1', array(), '', true);

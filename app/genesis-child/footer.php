@@ -111,7 +111,8 @@
 			
 		});
 	</script>
-<script defer src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
+
+
 	<style>
 		.wpcf7-form .input-group {
 			flex-wrap: nowrap;
